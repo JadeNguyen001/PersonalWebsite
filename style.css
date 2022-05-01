@@ -22,7 +22,7 @@ nav {
     background: linear-gradient(#2B5434, #E9E6E2);
 }
 
-ul {
+.navTier, .navL, .navM, .navR {
     margin: 0px;
     font-family: 'Bebas Neue';
     letter-spacing: .3em;
@@ -49,7 +49,7 @@ nav a {
 	display:block;
 	padding:0 10px;	
 	color:#FFF;
-	line-height: 60px;
+	line-height: 50px;
 	text-decoration:none;
 }
 
@@ -60,7 +60,7 @@ nav a {
 nav ul ul {
 	display: none;
 	position: absolute; 
-	top: 60px;
+	top: 50px;
 }
 
 nav ul li:hover > ul {
@@ -78,16 +78,27 @@ nav ul ul ul li {
 	left:170px;
 }
 
-.navL, .navR, .navM, .navTier {
+.navL, .navR, .navM {
     opacity: 0.8;
-    margin: 5px 0 0 0 ;
+    margin: 5px 0 0 0;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.9);
+}
+
+.navTier {
+    opacity: 0.8;
+    margin: 5px 0 0 0;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.9);
+    background-color: rgba(43, 84, 52, 0.5);
 }
   
 .navL:hover, .navR:hover, .navM:hover, .navTier:hover {
     opacity: 1.0;
-    background-color: rgba(0, 0, 0, 0.2);
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    background-color: rgba(43, 84, 52, 0.9);
+    transition: all .5s ease-out;
 }
 
+/* for the footer */
 footer {
     background-color: rgba(43, 84, 52, .8);
     display: flex;
@@ -113,6 +124,7 @@ a {
 .footLink:hover {
     opacity: 1.0;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: all .3s ease-out;
 }
 
 .footR {
@@ -120,6 +132,43 @@ a {
     padding: 10px;
 }
 
-/* .footL, .footR, .footM {
-    
-} */
+/* for the resume page */
+.resume {
+    margin: 20px 0 0 0;
+}
+
+.resumeFormat {
+    display: flex;
+}
+
+.resumeBorder, .resumeContent, .resumeTitle {
+    width: 25%;
+    margin: .5vh 0;
+}
+
+.resumeTitle, .resumeContent {
+    color: #3B4B16;
+}
+
+.resumeButton {
+    display: flex;
+    margin: 20px 0;
+}
+
+.button {
+    background-color: #E3CCDE;
+    padding: 15px;
+    color: #3B4B16;
+    border: 2px solid #3B4B16;
+    border-radius: 7px;
+}
+
+.button:hover {
+    background-color: #3B4B16;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all .3s ease-out;
+}
+
+h3 {
+    margin: 0;
+}
