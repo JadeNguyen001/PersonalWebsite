@@ -1,0 +1,124 @@
+body {
+    background: #E9E6E2;
+    margin: 0;
+    color: white;
+}
+/* for the Navigation Bar */
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.navContainerL {
+    padding: 0 0 0 20px;
+}
+
+.navContainerR {
+    padding: 0 20px 0 0;
+}
+
+nav {
+    background: linear-gradient(#2B5434, #E9E6E2);
+}
+
+ul {
+    margin: 0px;
+    font-family: 'Bebas Neue';
+    letter-spacing: .3em;
+    font-size: 110%;
+    align-content: center;
+}
+
+.navL, .navR {
+    font-size: 130%;
+}
+
+nav ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+nav ul li {
+	display:inline-block;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+/* nav a:hover { 
+    background-color: rgba(255, 255, 255, 0.25);
+} */
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px;
+}
+
+nav ul li:hover > ul {
+	display:inherit;
+}
+	
+nav ul ul li {
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+nav ul ul ul li {
+	position: relative;
+	left:170px;
+}
+
+.navL, .navR, .navM, .navTier {
+    opacity: 0.8;
+}
+  
+.navL:hover, .navR:hover, .navM:hover, .navTier:hover {
+    opacity: 1.0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: rgba(43, 84, 52, .8);
+    display: flex;
+    font-family: 'Bebas Neue';
+    font-size: 120%;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.foot {
+    margin: 0;
+    align-self: center;
+    letter-spacing: .25em;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.footLink:hover {
+    opacity: 1.0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.footR {
+    margin: 5px;
+    padding: 10px;
+}
+
+/* .footL, .footR, .footM {
+    
+} */
