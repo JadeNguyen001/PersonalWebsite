@@ -80,6 +80,7 @@ nav ul ul ul li {
 
 .navL, .navR, .navM, .navTier {
     opacity: 0.8;
+    margin: 5px 0 0 0 ;
 }
   
 .navL:hover, .navR:hover, .navM:hover, .navTier:hover {
