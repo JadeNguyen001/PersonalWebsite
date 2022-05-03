@@ -87,7 +87,7 @@ nav ul ul ul li {
     background-size: 200% 4px;
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    transition: background-position .75s ease-out;
+    transition: background-position .3s ease-out;
 }
 
 .navTier {
@@ -99,14 +99,14 @@ nav ul ul ul li {
     background-size: 200% 3px;
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    transition: background-position .75s ease-out;
+    transition: background-position .3s ease-out;
 }
 
 .navL:hover, .navR:hover, .navM:hover, .navTier:hover {
     opacity: 1.0;
     /* background-color: rgba(0, 0, 0, 0.75); */
     background-color: rgba(43, 84, 52, 0.9);
-    transition: all .5s ease-out;
+    transition: all .3s ease-out;
     /* transition: width 0.3s ease 0s, left 0.3s ease 0s; */
     background-position: 0% 100%;
 }
@@ -140,7 +140,7 @@ a {
     background-size: 200% 4px;
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    transition: background-position .75s ease-out;
+    transition: background-position .3s ease-out;
 }
 
 .footLink:hover {
@@ -155,16 +155,20 @@ a {
     padding: 10px;
 }
 
+.copyright {
+    font-size: 75%;
+}
+
 /* for the resume page */
 .resume {
     margin: 20px 0 0 0;
 }
 
-.resumeFormat {
+.pageFormat {
     display: flex;
 }
 
-.resumeBorder, .resumeContent, .resumeTitle {
+.pageBorder, .resumeContent, .resumeTitle {
     width: 25%;
     margin: .5vh 0;
 }
@@ -194,4 +198,34 @@ a {
 
 h3 {
     margin: 0;
+}
+
+/*  */
+.contentBox {
+    width: 50%;
+    background-color: #B3C1A8;
+    padding: 20px;
+}
+
+/* Image Carousel */
+
+
+.carousel-item--1 .carousel-item__image{
+  background-image: url('img/chronoshiftIndex.png');
+}
+
+.carousel-item--2 .carousel-item__image{
+  background-image: url('img/chronoshiftIntro.png');
+}
+
+.carousel-item--3 .carousel-item__image{
+  background-image: url('https://images.pexels.com/photos/92733/pexels-photo-92733.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.carousel-item--4 .carousel-item__image{
+  background-image: url('https://images.pexels.com/photos/1008732/pexels-photo-1008732.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+}
+
+.carousel-item--5 .carousel-item__image{
+  background-image: url('https://images.pexels.com/photos/1029614/pexels-photo-1029614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
