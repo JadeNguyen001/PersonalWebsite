@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
 </head>
+
 <body>
     <nav>
         <ul class="navBar">
@@ -48,12 +50,61 @@
         </ul>
     </nav>
 
-    <img>
-    <div>
-        <!-- Image carousel -->
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Arcu ac tortor dignissim convallis aenean et tortor. Lacinia quis vel eros donec ac odio tempor orci dapibus. Scelerisque eleifend donec pretium vulputate. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Mauris nunc congue nisi vitae suscipit tellus mauris a. Tellus in hac habitasse platea dictumst vestibulum. Tellus in metus vulputate eu scelerisque felis imperdiet proin fermentum. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget. Faucibus interdum posuere lorem ipsum dolor sit. Aliquet risus feugiat in ante metus dictum at tempor. Dui accumsan sit amet nulla facilisi morbi. Euismod elementum nisi quis eleifend. Vel turpis nunc eget lorem dolor sed viverra ipsum. Faucibus vitae aliquet nec ullamcorper sit amet risus. Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Et tortor consequat id porta nibh venenatis cras sed.
-        </p>
-        <!-- <div>button</div> -->
+    <div class="pageFormat">
+        <div class="pageBorder"></div>
+        <div class="contentBlock">
+            <!-- Image Carousel -->
+            <div id="slide">
+                <input type="radio" name="slide" id="s1">
+                <input type="radio" name="slide" id="s2">
+                <input type="radio" name="slide" id="s3" checked>
+                <input type="radio" name="slide" id="s4">
+                <input type="radio" name="slide" id="s5">
+                <label for="s1" id="slide1"></label>
+                <label for="s2" id="slide2"></label>
+                <label for="s3" id="slide3"></label>
+                <label for="s4" id="slide4"></label>
+                <label for="s5" id="slide5"></label>
+            </div>
+            <img>
+            <div>
+
+                <div>
+                    <p class="content">The hardest and most challenging project I made is the Interactive Story Project.
+                        In a group of 2-3, create an interactive story with multiple choices and branches for readers to
+                        follow. Unlike a regular story, they are linear and the character’s destinies are already
+                        chosen. However, in an interactive story, the players are given 2-3 options to choose what they
+                        want to do, eventually leading them towards three possible endings.
+                    </p>
+                    <p class="content">My partner and I initiated by brainstorming which type of story we wanted to do.
+                        We ended up selecting a dark-fantasy type. It was challenging in the beginning because after
+                        communicating and collaborating with each other about our plan we had a hard time trying to
+                        start off the story. During the making of our story, we mainly used LucidChart to plan out the
+                        paths and branches. We also had a Google Doc to check spelling/grammar but we had a really hard
+                        time trying to keep track of our story.
+
+                    </p>
+                    <p class="content">
+                        Once we finished our story, we had to start programming and developing our webpage using Visual
+                        Studio Code. My partner and I ran into a lot of problems here too since we ran into little
+                        errors in our code. We persisted through and continued trying to fix it to see where our
+                        mistakes were. Once we finished coding the main structure or function of our website, we finally
+                        got to start working on the aesthetics. Since our story was a dark fantasy, we went along with
+                        that theme and went with a dark color scheme. We continued to play around with the different
+                        effects we could do with CSS. I also made the hero image using Adobe Photoshop to edit it and
+                        then blurring out with CSS later to make our title stand out more. We played with the aesthetics
+                        of the buttons and ended up with a gif as the background. I find this project a really
+                        successful one since we were so persistence while constantly trying to reflect off our mistakes
+                        and errors.
+                    </p>
+                </div>
+                <a href="#">
+                    <div class="portfolioButton">Link to the Interactive Story Website</div>
+                </a>
+            </div>
+
+            <div class="pageBorder"></div>
+        </div>
     </div>
 
     <footer>
@@ -65,10 +116,11 @@
         </div>
         <div class="foot">
             <p class="footR">Contact Info:</p>
-            <p class="footLink footR"><a href="">Email</a></p>
-            <p class="footLink footR"><a href="">Number #</a></p>
+            <p class="footLink footR mailAndNumber"><a href="mailto:shirayuki27nguyen@gmail.com">shirayuki27nguyen@gmail.com</a></p>
+            <p class="footLink footR mailAndNumber"><a href="tel:+5597704480">559-770-4480</a></p>
         </div>
     </footer>
     <script src="main.js"></script>
 </body>
+
 </html>

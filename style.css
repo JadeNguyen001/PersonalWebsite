@@ -25,20 +25,17 @@ nav {
     background: linear-gradient(#2B5434, #E9E6E2);
 }
 
-.navTier,
-.navL,
-.navM,
-.navR {
+.navTier, .navL, .navM, .navR {
     margin: 0px;
     font-family: 'Bebas Neue';
     letter-spacing: .3em;
-    font-size: 110%;
+    font-size: 1.25em;
     align-content: center;
 }
 
 .navL,
 .navR {
-    font-size: 130%;
+    font-size: 1.75em;
 }
 
 nav ul {
@@ -163,8 +160,12 @@ a {
 }
 
 .footR {
-    margin: 5px;
+    margin: 1vh;
     padding: 10px;
+}
+
+.mailAndNumber {
+    font-size: .75vw;
 }
 
 .copyright {
@@ -178,12 +179,10 @@ a {
 
 .pageFormat {
     display: flex;
-    padding: .75vh 0;
+    padding: 1.5vh 0;
 }
 
-.pageBorder,
-.resumeContent,
-.resumeTitle {
+.pageBorder, .resumeContent, .resumeTitle {
     width: 25%;
     /* margin: .5vh 0; */
 }
@@ -205,6 +204,10 @@ a {
     border: 2px solid #3B4B16;
     border-radius: 7px;
     text-align: center;
+    font-family: 'Bebas Neue';
+    font-size: 100%;
+    letter-spacing: .2em;
+    font-weight: normal;
 }
 
 .portfolioButton {
@@ -214,11 +217,16 @@ a {
     border: 2px solid #3B4B16;
     border-radius: 7px;
     text-align: center;
-    width: 25%;
-    
+    /* width: 15vw; */
+    font-family: 'Bebas Neue';
+    font-size: 120%;
+    letter-spacing: .2em;
+    font-weight: normal;
+    align-self: center;
+    margin: 0 25%;
 }
 
-.button:hover {
+.button:hover, .portfolioButton:hover {
     background-color: #3B4B16;
     color: rgba(255, 255, 255, 0.9);
     transition: all .3s ease-out;
@@ -232,13 +240,27 @@ h3 {
 .contentBlock {
     width: 50%;
     background-color: #B3C1A8;
-    padding: 20px;
+    padding: 1.5vh 1vw 2vh 1vw;
+}
+
+.content {
+    font-family: 'Old Standard TT', serif;
+    text-indent: 2em;
+    padding: 0 2vw;
+}
+
+.contentTitle {
+    font-family: 'Bebas Neue';
+    letter-spacing: .3em;
+    font-size: 250%;
+    margin: 1vh;
+    text-align: center;
 }
 
 /* Image Carousel */
 /* https://codepen.io/iamdavid/pen/AYyqRG */
 
-/* [type=radio] {
+[type=radio] {
     display: none;
 }
 
@@ -317,8 +339,8 @@ h3 {
 #slide3 {
     background-image: url('img/chronoshiftPage1.png');
     background-size: cover;
-    /* background-position: center; */
-/* }
+    background-position: center;
+ }
 
 #slide4 {
     background-image: url('img/chronoshiftIntro.png');
@@ -328,4 +350,4 @@ h3 {
 
 #slide5 {
     background: #FF5722;
-}  */
+} 
