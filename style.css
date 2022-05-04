@@ -236,7 +236,9 @@ h3 {
 }
 
 /* Image Carousel */
-[type=radio] {
+/* https://codepen.io/iamdavid/pen/AYyqRG */
+
+/* [type=radio] {
     display: none;
 }
 
@@ -313,11 +315,10 @@ h3 {
 }
 
 #slide3 {
-    background-image: url('img/chronoshiftIndex.png');
+    background-image: url('img/chronoshiftPage1.png');
     background-size: cover;
-    background-position: center;
-    /* edit the pic */
-}
+    /* background-position: center; */
+/* }
 
 #slide4 {
     background-image: url('img/chronoshiftIntro.png');
@@ -327,4 +328,4 @@ h3 {
 
 #slide5 {
     background: #FF5722;
-}
+}  */
