@@ -179,7 +179,7 @@ a {
 
 .pageFormat {
     display: flex;
-    padding: 1.5vh 0;
+    margin: 0 0 1.5vh 0;
 }
 
 .pageBorder, .resumeContent, .resumeTitle {
@@ -187,14 +187,30 @@ a {
     /* margin: .5vh 0; */
 }
 
-.resumeTitle,
+.resumeTitle {
+    font-family: 'Bebas Neue';
+    font-size: 115%;
+    letter-spacing: .2em;
+    color: #3B4B16;
+}
+
 .resumeContent {
     color: #3B4B16;
+    font-family: 'Old Standard TT', serif;
+    font-weight: 500;
+    margin: 0;
 }
 
 .resumeButton {
     display: flex;
     margin: 20px 0;
+}
+
+hr {
+    width: 50%;
+    height: 2px;
+    background-color: #2B5434;
+    margin-top: 0;
 }
 
 .button {
