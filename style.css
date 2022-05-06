@@ -273,6 +273,38 @@ h3 {
     text-align: center;
 }
 
+/* Personal Life Page */
+.personalLifeFormat {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.personalLifeContent {
+    width: 50%;
+}
+
+.personalLifeSlide {
+    width: 50%;
+}
+
+.personalContentTitle {
+    font-family: 'Bebas Neue';
+    letter-spacing: .3em;
+    font-size: 250%;
+    margin: 1vh;
+    text-align: center;
+    color: #3B4B16;
+}
+
+.personalLifeText {
+    color: #3B4B16;
+    font-family: 'Old Standard TT', serif;
+    text-indent: 2em;
+}
+
+
+
 /* Image Carousel */
 /* https://codepen.io/iamdavid/pen/AYyqRG */
 
@@ -367,3 +399,132 @@ h3 {
 #slide5 {
     background: #FF5722;
 } 
+
+/* Image Carousel for the Personal Life Page */
+
+#personalLifeSlide1, #personalLifeSlide2 {
+    height: 17.5vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#personalLifeSlide1, #personalLifeSlide2 label {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.75s ease;
+}
+
+#s1:checked~#pLSlide4, #s1:checked~#aPSlide4,
+#s2:checked~#pLSlide5, #s2:checked~#aPSlide5,
+#s3:checked~#pLSlide1, #s3:checked~#aPSlide1,
+#s4:checked~#pLSlide2, #s4:checked~#aPSlide2,
+#s5:checked~#pLSlide3, #s5:checked~#aPSlide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-30%, 0, -200px);
+}
+
+#s1:checked~#pLSlide5, #s1:checked~#aPSlide5,
+#s2:checked~#pLSlide1, #s2:checked~#aPSlide1,
+#s3:checked~#pLSlide2, #s3:checked~#aPSlide2,
+#s4:checked~#pLSlide3, #s4:checked~#aPSlide3,
+#s5:checked~#pLSlide4, #s5:checked~#aPSlide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+#s1:checked~#pLSlide1, #s1:checked~#aPSlide1,
+#s2:checked~#pLSlide2, #s2:checked~#aPSlide2,
+#s3:checked~#pLSlide3, #s3:checked~#aPSlide3,
+#s4:checked~#pLSlide4, #s4:checked~#aPSlide4,
+#s5:checked~#pLSlide5, #s5:checked~#aPSlide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#s1:checked~#pLSlide2, #s1:checked~#pLSlide2,
+#s2:checked~#pLSlide3, #s2:checked~#pLSlide3,
+#s3:checked~#pLSlide4, #s3:checked~#pLSlide4,
+#s4:checked~#pLSlide5, 
+#s5:checked~#pLSlide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#s1:checked~#pLSlide3,
+#s2:checked~#pLSlide4,
+#s3:checked~#pLSlide5,
+#s4:checked~#pLSlide1,
+#s5:checked~#pLSlide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(30%, 0, -200px);
+}
+
+#pLSlide1 {
+    background-image: url('img/personalLifeSelfPic.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#pLSlide2 {
+    background-image: url('img/personalLifeKobe.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#pLSlide3 {
+    background-image: url('img/personalLifeSelfPic.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#pLSlide4 {
+    background-image: url('img/personalLifeSelfPic.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#pLSlide5 {
+    background-image: url('img/personalLifeSelfPic.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Slide for  */
+
+
+#aPSlide1 {
+    background-image: url('img/personalLifeSelfPic.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#aPSlide2 {
+    background-image: url('img/personalLifeKobe.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#aPSlide3 {
+    background-image: url('img/personalLifeSelfPic.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#aPSlide4 {
+    background-image: url('img/personalLifeSelfPic.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#aPSlide5 {
+    background-image: url('img/personalLifeSelfPic.jpg');
+    background-size: cover;
+    background-position: center;
+}
