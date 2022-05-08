@@ -286,6 +286,7 @@ h3 {
 
 .personalLifeSlide {
     width: 50%;
+    align-self: center;
 }
 
 .personalContentTitle {
@@ -301,8 +302,17 @@ h3 {
     color: #3B4B16;
     font-family: 'Old Standard TT', serif;
     text-indent: 2em;
+    font-size: 95%;
 }
 
+.gameLink {
+    color: #3B4B16;
+}
+
+.gameLink:hover {
+    transition: all .3s ease-out;
+    font-weight: 600;
+}
 
 
 /* Image Carousel */
@@ -402,16 +412,16 @@ h3 {
 
 /* Image Carousel for the Personal Life Page */
 
-#personalLifeSlide1, #personalLifeSlide2 {
+#personalLifeSlide1 {
     height: 17.5vw;
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
 }
 
-#personalLifeSlide1, #personalLifeSlide2 label {
+#personalLifeSlide1 label {
     margin: auto;
-    width: 60%;
+    width: 75%;
     height: 100%;
     border-radius: 4px;
     position: absolute;
@@ -421,36 +431,36 @@ h3 {
     transition: transform 0.75s ease;
 }
 
-#s1:checked~#pLSlide4, #s1:checked~#aPSlide4,
-#s2:checked~#pLSlide5, #s2:checked~#aPSlide5,
-#s3:checked~#pLSlide1, #s3:checked~#aPSlide1,
-#s4:checked~#pLSlide2, #s4:checked~#aPSlide2,
-#s5:checked~#pLSlide3, #s5:checked~#aPSlide3 {
+#s1:checked~#pLSlide4,
+#s2:checked~#pLSlide5,
+#s3:checked~#pLSlide1,
+#s4:checked~#pLSlide2,
+#s5:checked~#pLSlide3 {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
     transform: translate3d(-30%, 0, -200px);
 }
 
-#s1:checked~#pLSlide5, #s1:checked~#aPSlide5,
-#s2:checked~#pLSlide1, #s2:checked~#aPSlide1,
-#s3:checked~#pLSlide2, #s3:checked~#aPSlide2,
-#s4:checked~#pLSlide3, #s4:checked~#aPSlide3,
-#s5:checked~#pLSlide4, #s5:checked~#aPSlide4 {
+#s1:checked~#pLSlide5,
+#s2:checked~#pLSlide1,
+#s3:checked~#pLSlide2,
+#s4:checked~#pLSlide3,
+#s5:checked~#pLSlide4 {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
     transform: translate3d(-15%, 0, -100px);
 }
 
-#s1:checked~#pLSlide1, #s1:checked~#aPSlide1,
-#s2:checked~#pLSlide2, #s2:checked~#aPSlide2,
-#s3:checked~#pLSlide3, #s3:checked~#aPSlide3,
-#s4:checked~#pLSlide4, #s4:checked~#aPSlide4,
-#s5:checked~#pLSlide5, #s5:checked~#aPSlide5 {
+#s1:checked~#pLSlide1,
+#s2:checked~#pLSlide2,
+#s3:checked~#pLSlide3,
+#s4:checked~#pLSlide4,
+#s5:checked~#pLSlide5 {
     box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
     transform: translate3d(0, 0, 0);
 }
 
-#s1:checked~#pLSlide2, #s1:checked~#pLSlide2,
-#s2:checked~#pLSlide3, #s2:checked~#pLSlide3,
-#s3:checked~#pLSlide4, #s3:checked~#pLSlide4,
+#s1:checked~#pLSlide2,
+#s2:checked~#pLSlide3,
+#s3:checked~#pLSlide4,
 #s4:checked~#pLSlide5, 
 #s5:checked~#pLSlide1 {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
@@ -496,35 +506,192 @@ h3 {
     background-position: center;
 }
 
-/* Slide for  */
+/* Slide for Art Projects */
+#personalLifeSlide2 {
+    height: 20vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
 
+#personalLifeSlide2 label {
+    margin: auto;
+    width: 70%;
+    height: 105%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.75s ease;
+}
+
+#aPs1:checked~#aPSlide4,
+#aPs2:checked~#aPSlide5,
+#aPs3:checked~#aPSlide1,
+#aPs4:checked~#aPSlide2,
+#aPs5:checked~#aPSlide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-30%, 0, -200px);
+}
+
+#aPs1:checked~#aPSlide5,
+#aPs2:checked~#aPSlide1,
+#aPs3:checked~#aPSlide2,
+#aPs4:checked~#aPSlide3,
+#aPs5:checked~#aPSlide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+#aPs1:checked~#aPSlide1,
+#aPs2:checked~#aPSlide2,
+#aPs3:checked~#aPSlide3,
+#aPs4:checked~#aPSlide4,
+#aPs5:checked~#aPSlide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#aPs1:checked~#aPSlide2,
+#aPs2:checked~#aPSlide3,
+#aPs3:checked~#aPSlide4,
+#aPs4:checked~#aPSlide5, 
+#aPs5:checked~#aPSlide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#aPs1:checked~#aPSlide3,
+#aPs2:checked~#aPSlide4,
+#aPs3:checked~#aPSlide5,
+#aPs4:checked~#aPSlide1,
+#aPs5:checked~#aPSlide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(30%, 0, -200px);
+}
 
 #aPSlide1 {
-    background-image: url('img/personalLifeSelfPic.jpg');
+    background-image: url('img/artProjectsPot.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #aPSlide2 {
-    background-image: url('img/personalLifeKobe.jpg');
+    background-image: url('img/artProjectsWaterfall.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #aPSlide3 {
-    background-image: url('img/personalLifeSelfPic.jpg');
+    background-image: url('img/artProjectsSunset.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #aPSlide4 {
-    background-image: url('img/personalLifeSelfPic.jpg');
+    background-image: url('img/artProjectsBMO.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #aPSlide5 {
-    background-image: url('img/personalLifeSelfPic.jpg');
+    background-image: url('img/artProjectsMan.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Slide for Gaming */
+#personalLifeSlide3 {
+    height: 15vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#personalLifeSlide3 label {
+    margin: auto;
+    width: 80%;
+    height: 60%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.75s ease;
+}
+
+#gs1:checked~#gSlide4,
+#gs2:checked~#gSlide5,
+#gs3:checked~#gSlide1,
+#gs4:checked~#gSlide2,
+#gs5:checked~#gSlide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-30%, 0, -200px);
+}
+
+#gs1:checked~#gSlide5,
+#gs2:checked~#gSlide1,
+#gs3:checked~#gSlide2,
+#gs4:checked~#gSlide3,
+#gs5:checked~#gSlide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+#gs1:checked~#gSlide1,
+#gs2:checked~#gSlide2,
+#gs3:checked~#gSlide3,
+#gs4:checked~#gSlide4,
+#gs5:checked~#gSlide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#gs1:checked~#gSlide2,
+#gs2:checked~#gSlide3,
+#gs3:checked~#gSlide4,
+#gs4:checked~#gSlide5, 
+#gs5:checked~#gSlide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#gs1:checked~#gSlide3,
+#gs2:checked~#gSlide4,
+#gs3:checked~#gSlide5,
+#gs4:checked~#gSlide1,
+#gs5:checked~#gSlide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(30%, 0, -200px);
+}
+
+#gSlide1 {
+    background-image: url('img/gameValorant.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#gSlide2 {
+    background-image: url('img/gameFortnite.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#gSlide3 {
+    background-image: url('img/gameItTakesTwo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#gSlide4 {
+    background-image: url('img/gameMuck.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#gSlide5 {
+    background-image: url('img/gameCraftopia.jpg');
     background-size: cover;
     background-position: center;
 }
