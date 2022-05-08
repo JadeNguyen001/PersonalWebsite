@@ -309,11 +309,6 @@ h3 {
     color: #3B4B16;
 }
 
-.gameLink:hover {
-    transition: all .3s ease-out;
-    font-weight: 600;
-}
-
 
 /* Image Carousel */
 /* https://codepen.io/iamdavid/pen/AYyqRG */
@@ -603,7 +598,7 @@ h3 {
 
 /* Slide for Gaming */
 #personalLifeSlide3 {
-    height: 15vw;
+    height: 17.5vw;
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
@@ -611,8 +606,8 @@ h3 {
 
 #personalLifeSlide3 label {
     margin: auto;
-    width: 80%;
-    height: 60%;
+    width: 75%;
+    height: 100%;
     border-radius: 4px;
     position: absolute;
     left: 0;
@@ -667,31 +662,31 @@ h3 {
 }
 
 #gSlide1 {
-    background-image: url('img/gameValorant.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-#gSlide2 {
     background-image: url('img/gameFortnite.jpg');
     background-size: cover;
     background-position: center;
 }
 
-#gSlide3 {
+#gSlide2 {
     background-image: url('img/gameItTakesTwo.jpg');
     background-size: cover;
     background-position: center;
 }
 
-#gSlide4 {
+#gSlide3 {
     background-image: url('img/gameMuck.jpg');
     background-size: cover;
     background-position: center;
 }
 
-#gSlide5 {
+#gSlide4 {
     background-image: url('img/gameCraftopia.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#gSlide5 {
+    background-image: url('img/gameValorant.jpg');
     background-size: cover;
     background-position: center;
 }
