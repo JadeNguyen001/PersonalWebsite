@@ -263,6 +263,7 @@ h3 {
     font-family: 'Old Standard TT', serif;
     text-indent: 2em;
     padding: 0 2vw;
+    color: #3B4B16;
 }
 
 .contentTitle {
@@ -271,6 +272,7 @@ h3 {
     font-size: 250%;
     margin: 1vh;
     text-align: center;
+    color: #3B4B16;
 }
 
 /* Personal Life Page */
@@ -690,3 +692,92 @@ h3 {
     background-size: cover;
     background-position: center;
 }
+
+/* Slide for Chronoshift Website */
+#projectSlide1 {
+    height: 17.5vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#projectSlide1 label {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.75s ease;
+}
+
+#chronoWebs1:checked~#chronoWebslide4,
+#chronoWebs2:checked~#chronoWebslide5,
+#chronoWebs3:checked~#chronoWebslide1,
+#chronoWebs4:checked~#chronoWebslide2,
+#chronoWebs5:checked~#chronoWebslide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-30%, 0, -200px);
+}
+
+#chronoWebs1:checked~#chronoWebslide5,
+#chronoWebs2:checked~#chronoWebslide1,
+#chronoWebs3:checked~#chronoWebslide2,
+#chronoWebs4:checked~#chronoWebslide3,
+#chronoWebs5:checked~#chronoWebslide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+#chronoWebs1:checked~#chronoWebslide1,
+#chronoWebs2:checked~#chronoWebslide2,
+#chronoWebs3:checked~#chronoWebslide3,
+#chronoWebs4:checked~#chronoWebslide4,
+#chronoWebs5:checked~#chronoWebslide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#chronoWebs1:checked~#chronoWebslide2,
+#chronoWebs2:checked~#chronoWebslide3,
+#chronoWebs3:checked~#chronoWebslide4,
+#chronoWebs4:checked~#chronoWebslide5,
+#chronoWebs5:checked~#chronoWebslide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#chronoWebs1:checked~#chronoWebslide3,
+#chronoWebs2:checked~#chronoWebslide4,
+#chronoWebs3:checked~#chronoWebslide5,
+#chronoWebs4:checked~#chronoWebslide1,
+#chronoWebs5:checked~#chronoWebslide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(30%, 0, -200px);
+}
+
+#chronoWebslide1 {
+    background: #00BCD4
+}
+
+#chronoWebslide2 {
+    background: #4CAF50
+}
+
+#chronoWebslide3 {
+    background-image: url('img/chronoshiftPage1.png');
+    background-size: cover;
+    background-position: center;
+ }
+
+#chronoWebslide4 {
+    background-image: url('img/chronoshiftIntro.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#chronoWebslide5 {
+    background: #FF5722;
+} 
