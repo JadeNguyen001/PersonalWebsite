@@ -786,5 +786,5 @@ h3 {
 #chronoWebslide5 {
     background-image: url('img/chronoshiftBook.png');
     background-size: cover;
-    background-position: center;
+    background-position: top, left;
 } 
