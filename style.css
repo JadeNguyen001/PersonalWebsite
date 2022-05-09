@@ -695,16 +695,17 @@ h3 {
 
 /* Slide for Chronoshift Website */
 #projectSlide1 {
-    height: 17.5vw;
+    height: 20vw;
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
+    margin-bottom: 6.5vh;
 }
 
 #projectSlide1 label {
     margin: auto;
-    width: 60%;
-    height: 100%;
+    width: 70%;
+    height: 120%;
     border-radius: 4px;
     position: absolute;
     left: 0;
@@ -759,25 +760,31 @@ h3 {
 }
 
 #chronoWebslide1 {
-    background: #00BCD4
+    background-image: url('img/chronoshiftPage1.png');
+    background-size: cover;
+    background-position: top;
 }
 
 #chronoWebslide2 {
-    background: #4CAF50
-}
-
-#chronoWebslide3 {
-    background-image: url('img/chronoshiftPage1.png');
-    background-size: cover;
-    background-position: center;
- }
-
-#chronoWebslide4 {
     background-image: url('img/chronoshiftIntro.png');
     background-size: cover;
     background-position: center;
 }
 
+#chronoWebslide3 {
+    background-image: url('img/chronoshiftAbout.png');
+    background-size: cover;
+    background-position: top;
+ }
+
+#chronoWebslide4 {
+    background-image: url('img/chronoshiftExpeditions.png');
+    background-size: cover;
+    background-position: center;
+}
+
 #chronoWebslide5 {
-    background: #FF5722;
+    background-image: url('img/chronoshiftBook.png');
+    background-size: cover;
+    background-position: center;
 } 
