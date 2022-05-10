@@ -354,7 +354,6 @@ h3 {
 }
 
 /* Image Carousel */
-/* https://codepen.io/iamdavid/pen/AYyqRG */
 
 [type=radio] {
     display: none;
@@ -515,31 +514,31 @@ h3 {
 }
 
 #pLSlide1 {
-    background-image: url('img/personalLifeKobe1.jpg');
+    background-image: url('img/personalLife/kobe1.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #pLSlide2 {
-    background-image: url('img/personalLifeKobe2.jpg');
+    background-image: url('img/personalLife/kobe2.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #pLSlide3 {
-    background-image: url('img/personalLifeZico1.JPEG');
+    background-image: url('img/personalLife/zico1.JPEG');
     background-size: cover;
     background-position: top;
 }
 
 #pLSlide4 {
-    background-image: url('img/personalLifeZico2.jpg');
+    background-image: url('img/personalLife/zico2.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #pLSlide5 {
-    background-image: url('img/personalLifeSelfPic.jpg');
+    background-image: url('img/personalLife/selfPic.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -611,31 +610,31 @@ h3 {
 }
 
 #aPSlide1 {
-    background-image: url('img/artProjectsPot.jpg');
+    background-image: url('img/artProjects/pot.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #aPSlide2 {
-    background-image: url('img/artProjectsWaterfall.jpg');
+    background-image: url('img/artProjects/waterfall.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #aPSlide3 {
-    background-image: url('img/artProjectsSunset.jpg');
+    background-image: url('img/artProjects/sunset.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #aPSlide4 {
-    background-image: url('img/artProjectsBMO.jpg');
+    background-image: url('img/artProjects/bmo.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #aPSlide5 {
-    background-image: url('img/artProjectsMan.jpg');
+    background-image: url('img/artProjects/man.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -706,31 +705,31 @@ h3 {
 }
 
 #gSlide1 {
-    background-image: url('img/gameFortnite.jpg');
+    background-image: url('img/games/fortnite.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #gSlide2 {
-    background-image: url('img/gameItTakesTwo.jpg');
+    background-image: url('img/games/itTakesTwo.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #gSlide3 {
-    background-image: url('img/gameMuck.jpg');
+    background-image: url('img/games/muck.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #gSlide4 {
-    background-image: url('img/gameCraftopia.jpg');
+    background-image: url('img/games/craftopia.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #gSlide5 {
-    background-image: url('img/gameValorant.jpg');
+    background-image: url('img/games/valorant.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -803,31 +802,31 @@ h3 {
 }
 
 #chronoWebslide1 {
-    background-image: url('img/chronoshiftPage1.png');
+    background-image: url('img/chronoshift/page1.png');
     background-size: cover;
     background-position: top;
 }
 
 #chronoWebslide2 {
-    background-image: url('img/chronoshiftIntro.png');
+    background-image: url('img/chronoshift/intro.png');
     background-size: cover;
     background-position: center;
 }
 
 #chronoWebslide3 {
-    background-image: url('img/chronoshiftAbout.png');
+    background-image: url('img/chronoshift/about.png');
     background-size: cover;
     background-position: top;
  }
 
 #chronoWebslide4 {
-    background-image: url('img/chronoshiftExpeditions.png');
+    background-image: url('img/chronoshift/expeditions.png');
     background-size: cover;
     background-position: center;
 }
 
 #chronoWebslide5 {
-    background-image: url('img/chronoshiftBook.png');
+    background-image: url('img/chronoshift/book.png');
     background-size: cover;
     background-position: top, left;
 } 
