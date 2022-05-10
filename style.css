@@ -22,7 +22,10 @@ body {
 
 
 nav {
-    background: linear-gradient(#2B5434, #E9E6E2);
+    background: linear-gradient(#2B5434, rgba(233, 230, 226, .01));
+    position: fixed;
+    width: 100%;
+    z-index: 15;
 }
 
 .navTier, .navL, .navM, .navR {
@@ -361,16 +364,17 @@ h3 {
 }
 
 #slide {
-    height: 17.5vw;
+    height: 20vw;
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
+    margin-bottom: 6.5vh;
 }
 
 #slide label {
     margin: auto;
-    width: 60%;
-    height: 100%;
+    width: 70%;
+    height: 120%;
     border-radius: 4px;
     position: absolute;
     left: 0;
@@ -929,16 +933,17 @@ h3 {
 
 /* Interactive Story Image Carousel */
 #interactiveStoryslide {
-    height: 17.5vw;
+    height: 20vw;
     position: relative;
     perspective: 1000px;
     transform-style: preserve-3d;
+    margin-bottom: 6.5vh;
 }
 
 #interactiveStoryslide label {
     margin: auto;
-    width: 60%;
-    height: 100%;
+    width: 70%;
+    height: 120%;
     border-radius: 4px;
     position: absolute;
     left: 0;
@@ -993,25 +998,31 @@ h3 {
 }
 
 #interactiveStoryslide1 {
-    background: #00BCD4
+    background-image: url('img/interactiveStory/homePage1.PNG');
+    background-size: cover;
+    background-position: center;
 }
 
 #interactiveStoryslide2 {
-    background: #4CAF50
+    background-image: url('img/interactiveStory/homePage2.PNG');
+    background-size: cover;
+    background-position: center;
 }
 
 #interactiveStoryslide3 {
-    background-image: url('img/chronoshiftPage1.png');
+    background-image: url('img/interactiveStory/startPage.PNG');
     background-size: cover;
     background-position: center;
  }
 
 #interactiveStoryslide4 {
-    background-image: url('img/chronoshiftIntro.png');
+    background-image: url('img/interactiveStory/victoryPage.PNG');
     background-size: cover;
     background-position: center;
 }
 
 #interactiveStoryslide5 {
-    background: #FF5722;
+    background-image: url('img/interactiveStory/gameOverPage.PNG');
+    background-size: cover;
+    background-position: center;
 } 
