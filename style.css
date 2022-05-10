@@ -897,25 +897,120 @@ h3 {
 }
 
 #tourWebslide1 {
-    background: #00BCD4
+    background-image: url('img/tourism/homePage.PNG');
+    background-size: cover;
+    background-position: center;
 }
 
 #tourWebslide2 {
-    background: #4CAF50
+    background-image: url('img/tourism/destinationPage.PNG');
+    background-size: cover;
+    background-position: center;
 }
 
 #tourWebslide3 {
-    background-image: url('img/chronoshiftPage1.png');
+    background-image: url('img/tourism/aboutPage.PNG');
     background-size: cover;
     background-position: center;
  }
 
 #tourWebslide4 {
-    background-image: url('img/chronoshiftIntro.png');
+    background-image: url('img/tourism/discoverPage.PNG');
     background-size: cover;
     background-position: center;
 }
 
 #tourWebslide5 {
+    background-image: url('img/tourism/visitPage.PNG');
+    background-size: cover;
+    background-position: center;
+} 
+
+/* Interactive Story Image Carousel */
+#interactiveStoryslide {
+    height: 17.5vw;
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#interactiveStoryslide label {
+    margin: auto;
+    width: 60%;
+    height: 100%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.75s ease;
+}
+
+#interactiveStorys1:checked~#interactiveStoryslide4,
+#interactiveStorys2:checked~#interactiveStoryslide5,
+#interactiveStorys3:checked~#interactiveStoryslide1,
+#interactiveStorys4:checked~#interactiveStoryslide2,
+#interactiveStorys5:checked~#interactiveStoryslide3 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(-30%, 0, -200px);
+}
+
+#interactiveStorys1:checked~#interactiveStoryslide5,
+#interactiveStorys2:checked~#interactiveStoryslide1,
+#interactiveStorys3:checked~#interactiveStoryslide2,
+#interactiveStorys4:checked~#interactiveStoryslide3,
+#interactiveStorys5:checked~#interactiveStoryslide4 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(-15%, 0, -100px);
+}
+
+#interactiveStorys1:checked~#interactiveStoryslide1,
+#interactiveStorys2:checked~#interactiveStoryslide2,
+#interactiveStorys3:checked~#interactiveStoryslide3,
+#interactiveStorys4:checked~#interactiveStoryslide4,
+#interactiveStorys5:checked~#interactiveStoryslide5 {
+    box-shadow: 0 13px 25px 0 rgba(0, 0, 0, .3), 0 11px 7px 0 rgba(0, 0, 0, .19);
+    transform: translate3d(0, 0, 0);
+}
+
+#interactiveStorys1:checked~#interactiveStoryslide2,
+#interactiveStorys2:checked~#interactiveStoryslide3,
+#interactiveStorys3:checked~#interactiveStoryslide4,
+#interactiveStorys4:checked~#interactiveStoryslide5,
+#interactiveStorys5:checked~#interactiveStoryslide1 {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .3), 0 2px 2px 0 rgba(0, 0, 0, .2);
+    transform: translate3d(15%, 0, -100px);
+}
+
+#interactiveStorys1:checked~#interactiveStoryslide3,
+#interactiveStorys2:checked~#interactiveStoryslide4,
+#interactiveStorys3:checked~#interactiveStoryslide5,
+#interactiveStorys4:checked~#interactiveStoryslide1,
+#interactiveStorys5:checked~#interactiveStoryslide2 {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .37);
+    transform: translate3d(30%, 0, -200px);
+}
+
+#interactiveStoryslide1 {
+    background: #00BCD4
+}
+
+#interactiveStoryslide2 {
+    background: #4CAF50
+}
+
+#interactiveStoryslide3 {
+    background-image: url('img/chronoshiftPage1.png');
+    background-size: cover;
+    background-position: center;
+ }
+
+#interactiveStoryslide4 {
+    background-image: url('img/chronoshiftIntro.png');
+    background-size: cover;
+    background-position: center;
+}
+
+#interactiveStoryslide5 {
     background: #FF5722;
 } 
