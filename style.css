@@ -345,6 +345,10 @@ h3 {
 }
 
 .fypImg {
+    background-image: url('img/fiveYearPlan.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 50%;
     /* background-image: ; */
 }
@@ -511,25 +515,25 @@ h3 {
 }
 
 #pLSlide1 {
-    background-image: url('img/personalLifeSelfPic.jpg');
+    background-image: url('img/personalLifeKobe1.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #pLSlide2 {
-    background-image: url('img/personalLifeKobe.jpg');
+    background-image: url('img/personalLifeKobe2.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #pLSlide3 {
-    background-image: url('img/personalLifeSelfPic.jpg');
+    background-image: url('img/personalLifeZico1.JPEG');
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 #pLSlide4 {
-    background-image: url('img/personalLifeSelfPic.jpg');
+    background-image: url('img/personalLifeZico2.jpg');
     background-size: cover;
     background-position: center;
 }
