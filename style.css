@@ -22,7 +22,7 @@ body {
 
 
 nav {
-    background: linear-gradient(#2B5434, rgba(233, 230, 226, .01));
+    background: linear-gradient(#2B5434, rgba(43, 84, 52, .01));
     position: fixed;
     width: 100%;
     z-index: 15;
@@ -176,6 +176,24 @@ a {
     font-size: 75%;
 }
 
+/* Page Formatting */
+.pageFormat {
+    display: flex;
+    padding: 15px 0 0 0;
+}
+
+.top {
+    padding: 25px 0 0 0;
+}
+
+.bottom {
+    padding: 15px 0 25px 0;
+}
+
+.main {
+    padding: 25px 0;
+}
+
 /* Contact Info Page */
 .contentMe {
     display: flex;
@@ -202,13 +220,12 @@ a {
 }
 
 /* for the resume page */
-.resume {
-    margin: 20px 0 0 0;
-}
-
-.pageFormat {
-    display: flex;
-    margin: 0 0 1.5vh 0;
+.heroResume {
+    background-image: url('img/resumeHero.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
 }
 
 .pageBorder, .resumeContent, .resumeTitle {
@@ -238,8 +255,8 @@ a {
 hr {
     width: 50%;
     height: 2px;
-    background-color: #2B5434;
-    margin-top: 0;
+    background-color: #3B4B16;
+    margin-top: 2px;
 }
 
 .button {
@@ -305,6 +322,37 @@ h3 {
 }
 
 /* Personal Life Page */
+.heroFormat {
+    height: 85vh;
+    filter: blur(3px);
+    /* -webkit-filter: blur(8px); */
+}
+
+.heroHeading {
+    /* background-color: rgba(43, 84, 52, .5); */
+    background-color:rgba(227, 204, 222, .6);
+    color: white;
+    border: 3px solid white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    font-family: 'Bebas Neue';
+    letter-spacing: .5em;
+    font-size: 3em;
+    padding: 20px;
+    text-align: center;
+}
+
+.heroPersonalLife {
+    background-image: url('img/personalLifeHero.JPG');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .personalLifeFormat {
     display: flex;
     width: 100%;
@@ -454,7 +502,6 @@ h3 {
 } 
 
 /* Image Carousel for the Personal Life Page */
-
 #personalLifeSlide1 {
     height: 17.5vw;
     position: relative;
@@ -520,31 +567,31 @@ h3 {
 }
 
 #pLSlide1 {
-    background-image: url('img/personalLife/kobe1.jpg');
+    background-image: url('img/personalLife/zico1.JPEG');
     background-size: cover;
     background-position: center;
 }
 
 #pLSlide2 {
-    background-image: url('img/personalLife/kobe2.jpg');
+    background-image: url('');
     background-size: cover;
     background-position: center;
 }
 
 #pLSlide3 {
-    background-image: url('img/personalLife/zico1.JPEG');
+    background-image: url('');
     background-size: cover;
     background-position: top;
 }
 
 #pLSlide4 {
-    background-image: url('img/personalLife/zico2.jpg');
+    background-image: url('');
     background-size: cover;
     background-position: center;
 }
 
 #pLSlide5 {
-    background-image: url('img/personalLife/selfPic.jpg');
+    background-image: url('img/personalLife/kobe1.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -761,6 +808,15 @@ h3 {
     transition: transform 0.75s ease;
 }
 
+/* Chornoshift Page */
+.heroChronoshift{
+    background-image: url('img/chronoshift/chronoshiftHero.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+}
+
 /* Chronoshift Image Carousel */
 #chronoWebs1:checked~#chronoWebslide4,
 #chronoWebs2:checked~#chronoWebslide5,
@@ -808,7 +864,7 @@ h3 {
 }
 
 #chronoWebslide1 {
-    background-image: url('img/chronoshift/page1.png');
+    background-image: url('img/chronoshift/chronoshiftHero.png');
     background-size: cover;
     background-position: top;
 }
@@ -836,6 +892,15 @@ h3 {
     background-size: cover;
     background-position: top, left;
 } 
+
+/* Tourism Page */
+.heroTourism {
+    background-image: url('img/tourism/tourismHero.PNG');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
 
 /* Tourism Image Carousel */
 #tourWebslide {
@@ -932,6 +997,15 @@ h3 {
     background-position: center;
 } 
 
+/* Interactive Story Page */
+.heroInteractive {
+    background-image: url('img/interactiveStory/homePage1.PNG');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
 /* Interactive Story Image Carousel */
 #interactiveStoryslide {
     height: 20vw;
@@ -1027,3 +1101,39 @@ h3 {
     background-size: cover;
     background-position: center;
 } 
+
+/* Calculator Page */
+.heroCalculator {
+    background-image: url('img/calculator.PNG');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
+}
+.calculatorImage {
+    background-image: url('img/calculator.PNG');
+    height: 20vw;
+    width: 70%;
+    background-size: 110%;
+    background-position: center;
+    /* position: 50%; */
+    /* background-repeat: no-repeat; */
+    align-self: center;
+}
+/* 
+    position: relative;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    margin-bottom: 6.5vh;
+}
+
+#interactiveStoryslide label {
+    margin: auto;
+    
+    height: 120%;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: transform 0.75s ease; */
