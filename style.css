@@ -26,6 +26,7 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 15;
+    margin: 0;
 }
 
 .navTier, .navL, .navM, .navR {
@@ -716,19 +717,19 @@ h3 {
 }
 
 #gSlide2 {
-    background-image: url('img/games/itTakesTwo.jpg');
+    background-image: url('img/games/minecraft.jpeg');
     background-size: cover;
     background-position: center;
 }
 
 #gSlide3 {
-    background-image: url('img/games/muck.jpg');
+    background-image: url('img/games/itTakesTwo.jpg');
     background-size: cover;
     background-position: center;
 }
 
 #gSlide4 {
-    background-image: url('img/games/craftopia.jpg');
+    background-image: url('img/games/muck.jpg');
     background-size: cover;
     background-position: center;
 }
