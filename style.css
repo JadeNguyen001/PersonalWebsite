@@ -205,7 +205,7 @@ a {
 
 .contactMeFormat {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .contactMeInfo {
@@ -1115,13 +1115,12 @@ h3 {
 .calculatorImage {
     background-image: url('img/calculator.PNG');
     height: 20vw;
-    width: 70%;
-    background-size: 110%;
+    background-size: 125%;
     background-position: center;
-    /* position: 50%; */
-    /* background-repeat: no-repeat; */
-    align-self: center;
+    margin: 0 15%;
+    border-radius: 4px;
 }
+
 /* 
     position: relative;
     perspective: 1000px;
