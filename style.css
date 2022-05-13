@@ -126,6 +126,60 @@ nav ul ul ul li {
 
 /* for the footer */
 footer {
+    display: flex;
+    font-family: 'Bebas Neue';
+    font-size: 1.25em;
+    justify-content: space-between;
+    padding: 20px;
+    color: #3B4B16;
+    letter-spacing: .1em;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    color: #3B4B16;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footLink:hover {
+    opacity: 1.0;
+    background-color: rgba(43, 84, 52, 0.9);
+    transition: all .3s ease-out;
+    background-position: 0% 100%;
+    color: rgba(255, 255, 255, 0.9);
+    
+}
+
+.footLink {
+    background-image: linear-gradient(to right, #B3C1A8 50%, transparent 50%);
+    background-size: 200% 4px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    transition: background-position .3s ease-out;
+    padding: 5px;
+    margin: .5em 0;
+    font-size: 80%;
+}
+
+.copyright {
+    font-size: .75em;
+    text-align: center;
+}
+
+.footTitle {
+    padding: 10px;
+    margin: 0;
+    text-indent: 1.75em;
+}
+
+.sides {
+    width: 11.5em;
+}
+/* footer {
     background-color: rgba(43, 84, 52, .8);
     display: flex;
     font-family: 'Bebas Neue';
@@ -174,7 +228,7 @@ a {
 
 .copyright {
     font-size: 75%;
-}
+} */
 
 /* Page Formatting */
 .pageFormat {
