@@ -128,11 +128,12 @@ nav ul ul ul li {
 footer {
     display: flex;
     font-family: 'Bebas Neue';
-    font-size: 1.25em;
+    font-size: 1em;
     justify-content: space-between;
     padding: 20px;
     color: #3B4B16;
     letter-spacing: .1em;
+    margin: 0 25%;
 }
 
 a {
@@ -178,6 +179,10 @@ a:hover {
 
 .sides {
     width: 11.5em;
+}
+
+.name {
+    font-size: 1.25em;
 }
 /* footer {
     background-color: rgba(43, 84, 52, .8);
@@ -229,6 +234,63 @@ a {
 .copyright {
     font-size: 75%;
 } */
+
+/* Index/Home Page */
+.pages {
+    position: relative;
+    text-align: center;
+}
+
+.perLifePage {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+}
+
+.perLifePage .bg {
+    background-image: url('img/personalLife/personalLifeHero.JPG');
+    height: 100%;
+    width: 100%; 
+    background-position: 50% 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    filter: blur(3px);
+}
+
+.pageTitle {
+    background-color: rgba(227, 204, 222, .6);
+    padding: 1em 0;
+    text-align: center;
+    position: absolute;
+    bottom: 35%;
+    margin: 0;
+    width: 50%;
+    z-index: 2;
+    border-radius: 4px;
+    left: 25%;
+    border: 2px solid #3B4B16;
+}
+
+.pageTitle:hover {
+    background-color: #3B4B16;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all .3s ease-out;
+}
+
+.resumePage {
+    background-image: url('img/resumeHero.jpg');
+    height: 100%; 
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 20vh;
+    filter: blur(3px);
+}
+
+
 
 /* Page Formatting */
 .pageFormat {
@@ -402,7 +464,7 @@ h3 {
 }
 
 .heroPersonalLife {
-    background-image: url('img/personalLifeHero.JPG');
+    background-image: url('img/personalLife/personalLifeHero.JPG');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
