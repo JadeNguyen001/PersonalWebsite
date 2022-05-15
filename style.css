@@ -61,10 +61,6 @@ nav a {
     text-decoration: none;
 }
 
-/* nav a:hover { 
-    background-color: rgba(255, 255, 255, 0.25);
-} */
-
 nav ul ul {
     display: none;
     position: absolute;
@@ -140,10 +136,6 @@ a {
     text-decoration: none;
     margin: 0;
     color: #3B4B16;
-}
-
-a:hover {
-    color: rgba(255, 255, 255, 0.9);
 }
 
 .footLink:hover {
@@ -247,16 +239,73 @@ a {
     position: relative;
 }
 
-.perLifePage .bg {
-    background-image: url('img/personalLife/personalLifeHero.JPG');
+.heroIndex {
+    background-image: url('img/indexHero.JPG');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+
+.pageBg {
+    z-index: 1;
+    position: absolute;
+    filter: blur(3px);
     height: 100%;
-    width: 100%; 
-    background-position: 50% 35%;
+    width: 100%;
+}
+
+.homeMiddle {
+    margin: 1.5em 0;
+}
+
+.bg1 {
+    background-image: url('img/personalLife/kobe1.jpg');
+    background-position: 50% 15%;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    z-index: 1;
-    filter: blur(3px);
+}
+
+.bg2 {
+    background-image: url('img/resumeHero.jpg');
+    background-position: 50% 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg3 {
+    background-image: url('img/chronoshift/chronoshiftHero.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg4 {
+    background-image: url('img/tourism/tourismHero.PNG');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg5 {
+    background-image: url('img/interactiveStory/homePage1.PNG');
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg6 {
+    background-image: url('img/calculator.PNG');
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg7 {
+    background-image: url('img/artProjects/man.jpg');
+    background-position: 50% 15%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pageTitle {
@@ -264,17 +313,20 @@ a {
     padding: 1em 0;
     text-align: center;
     position: absolute;
-    bottom: 35%;
+    bottom: 30%;
     margin: 0;
     width: 50%;
     z-index: 2;
     border-radius: 4px;
     left: 25%;
-    border: 2px solid #3B4B16;
+    border: 2px solid rgba(59, 75, 22, .6);
+    font-family: 'Bebas Neue';
+    font-size: 1.25em;
+    letter-spacing: .3em;
 }
 
 .pageTitle:hover {
-    background-color: #3B4B16;
+    background-color: rgba(59, 75, 22, .6);
     color: rgba(255, 255, 255, 0.9);
     transition: all .3s ease-out;
 }
@@ -289,8 +341,6 @@ a {
     height: 20vh;
     filter: blur(3px);
 }
-
-
 
 /* Page Formatting */
 .pageFormat {
@@ -311,8 +361,108 @@ a {
 }
 
 /* Contact Info Page */
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  /* Left contact page */
+.form-control {
+    width: 95%;
+    margin: .2em;
+}
+
+.form-horizontal {
+    width: 45%;
+}
+
+.form-control, textarea {
+    max-width: 95%;
+    background-color: #E3CCDE;
+    color: #3B4B16;
+    font-family: 'Old Standard TT', serif;
+    border-radius: 4px;
+  }
+  
+.send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+  }
+  
+.alt-send-button {
+    width: 400px;
+    height: 34px;
+    transition: all .2s ease-in-out;
+  }
+  
+.send-text {
+    display: block;
+    margin-top: 10px;
+    font: 700 12px 'Lato', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  /* Begin Right Contact Page */
+.direct-contact-container {
+    width: 45%;
+  }
+  
+  /* Location, Phone, Email Section */
+.contact-list {
+    list-style-type: none;
+    margin-left: -30px;
+    padding-right: 20px;
+  }
+  
+.list-item {
+    line-height: 4;
+    color: #aaa;
+  }
+  
+.contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #bbb;
+  }
+  
+.place {
+    margin-left: 62px;
+  }
+  
+.phone {
+    margin-left: 56px;
+  }
+  
+.gmail {
+    margin-left: 53px;
+  }
+  
+.contact-text a {
+    color: #bbb;
+    text-decoration: none;
+    transition-duration: 0.2s;
+  }
+  
+.contact-text a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
 .contentMe {
     display: flex;
+}
+
+.heroContact {
+    background-image: url('img/contactHero.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 80%;
 }
 
 .contactMeContent {
@@ -464,10 +614,11 @@ h3 {
 }
 
 .heroPersonalLife {
-    background-image: url('img/personalLife/personalLifeHero.JPG');
+    background-image: url('img/personalLife/kobe1.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: 50% 20%;
 }
 
 .personalLifeFormat {
@@ -709,9 +860,62 @@ h3 {
 }
 
 #pLSlide5 {
-    background-image: url('img/personalLife/kobe1.jpg');
+    background-image: url('img/personalLife/personalLifeHero.jpg');
     background-size: cover;
     background-position: center;
+}
+
+/* Art Projects Page */
+.heroArt {
+    background-image: url('img/artProjects/man.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 5%;
+}
+
+.containArtPro {
+    display: flex;
+    margin: 0 0 1.5em 0;
+}
+
+.imgArtPro {
+    width: 50%;
+    background-size: 100%;
+}
+
+.textArtPro {
+    width: 50%;
+}
+
+.imgOldMan {
+    background-image: url('img/artProjects/man.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgPot {
+    background-image: url('img/artProjects/pot.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.imgWaterfall {
+    background-image: url('img/artProjects/waterfall.jpg');
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+}
+
+.imgSunset {
+    background-image: url('img/artProjects/sunset.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgBMO {
+    background-image: url('img/artProjects/bmo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Slide for Art Projects */

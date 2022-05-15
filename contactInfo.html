@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +11,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <nav>
         <ul class="navBar">
             <div class="navContainerL">
                 <li>
-                    <p class="navL"><a href="index.html">Jade Nguyen</a></p>
+                    <a class="navL" href="index.html">Jade Nguyen</a>
                 </li>
             </div>
             <div>
-                <li>
-                    <p class="navM"><a href="index.html">Home</a></p>
-                </li>
+                <li><a class="navM" href="index.html">Home</a></li>
                 <li>|</li>
                 <li>
                     <p class="navM"><a>About Me</a></p>
@@ -34,8 +34,8 @@
                 <li>
                     <p class="navM"><a>Projects</a></p>
                     <ul>
-                        <li class="navTier"><a href="portfolio-chronoshift.html">Chronoshift Website</a></li>
-                        <li class="navTier"><a href="portfolio-tourism.html">Tourism Website</a></li>
+                        <li class="navTier"><a href="portfolio-chronoshift.html">Chronoshift Project</a></li>
+                        <li class="navTier"><a href="portfolio-tourism.html">Tourism Project</a></li>
                         <li class="navTier"><a href="portfolio-interactiveStory.html">Interactive Story</a></li>
                         <li class="navTier"><a href="portfolio-calculator.html">Calculator Project</a></li>
                         <li class="navTier"><a href="portfolio-artProjects.html">Art Projects</a></li>
@@ -50,6 +50,11 @@
         </ul>
     </nav>
 
+
+    <div class="heroFormat heroContact"></div>
+    <div class="heroHeading">
+        <h2>「Contact Info」</h2>
+    </div>
     <div class="pageFormat main">
         <div class="pageBorder"></div>
         <div class="contentBlock contactMe">
@@ -57,10 +62,75 @@
                 <div class="contactMeContent">
                     <h2 class="personalContentTitle">Contact</h2>
                 </div>
-                    <div class="contactMeContent contactMeText">
-                        <p class="content">Email: <a class="contactMeInfo" href="mailto:shirayuki27nguyen@gmail.com"><u>shirayuki27nguyen@gmail.com</u></a></p>
-                        <p class="content">Phone Number: <a class="contactMeInfo" href="tel:+5597704480"><u>559-770-4480</u></a></p>
+                <div class="contactMeContent contactMeText">
+                    <!-- <p class="content">Email: <a class="contactMeInfo"
+                            href="mailto:shirayuki27nguyen@gmail.com"><u>shirayuki27nguyen@gmail.com</u></a></p>
+                    <p class="content">Phone Number: <a class="contactMeInfo"
+                            href="tel:+5597704480"><u>559-770-4480</u></a></p> -->
+                    <div id="contactForm" class="contact-wrapper">
+                        <!-- Left contact page -->
+                        <form id="contact-form" class="form-horizontal" role="form">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="name" placeholder="Name" name="name"
+                                        value="" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" name="email"
+                                        value="" required>
+                                </div>
+                            </div>
+                            <textarea class="form-control" rows="10" placeholder="Message" name="message"
+                                required></textarea>
+                            <div class="portfolioButton">SEND</div>
+                        </form>
+                        <!-- Right contact page -->
+                        <div class="direct-contact-container">
+                            <ul class="contact-list">
+                                <li class="contactMeContent contactMeText"><span
+                                        class="contactMeContent contactMeText">Number: 
+                                        <br>
+                                        <a class="contactMeInfo"
+                                            href="tel:+5597704480" title="Give me a call"><u>559-770-4480</u></a></span>
+                                </li>
+                                <br><br>
+                                <li class="contactMeContent contactMeText"><span
+                                        class="contactMeContent contactMeText">Email: 
+                                        <br>
+                                        <a class="contactMeInfo"
+                                            href="mailto:shirayuki27nguyen@gmail.com"
+                                            title="Send me an email"><u>shirayuki27nguyen@gmail.com</u></a></span></li>
+
+                            </ul>
+                        </div>
                     </div>
+
+                    <!-- <form onsubmit="return false">
+                            <input type="text" placeholder="Enter your first name" id="firstName" />
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="text" placeholder="Enter your last name" id="lastName" />
+                            <br><br>
+                            <input type="email" placeholder="Enter your email" id="email" />
+                            <br><br>
+                            <input type="text" placeholder="Address" id="address" />
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="text" placeholder="Phone number" id="phoneNumber" />
+                            &nbsp;&nbsp;&nbsp;
+                            <select id="state">
+                                <option disabled selected value> -- select a state -- </option>
+                                <option value="California">California</option>
+                                <option value="depressed">depressed</option>
+                            </select>
+                            <br><br>
+                            <span>Do you have any question?</span>
+                            <br>
+                            <textarea id="question" rows="4"></textarea>
+                            <br><br>
+                            <button onclick="sendContact();">Submit</button>
+                        </form> -->
+                </div>
             </div>
         </div>
         <div class="pageBorder"></div>
@@ -68,24 +138,43 @@
 
     <footer>
         <div class="foot sides">
-            <a href="index.html"><p class="footLink">Home</p></a>
+            <a href="index.html">
+                <p class="footLink">Home</p>
+            </a>
             <p class="footTitle">Contact Info:</p>
-            <a href="mailto:shirayuki27nguyen@gmail.com"><p class="footLink">shirayuki27nguyen@gmail.com</p></a>
-            <a href="tel:+5597704480"><p class="footLink">559-770-4480</p></a>
+            <a href="mailto:shirayuki27nguyen@gmail.com">
+                <p class="footLink">shirayuki27nguyen@gmail.com</p>
+            </a>
+            <a href="tel:+5597704480">
+                <p class="footLink">559-770-4480</p>
+            </a>
         </div>
         <div class="foot">
-            <a href="index.html"><p class="footLink copyright name">Jade Nguyen</p></a>
+            <a href="index.html">
+                <p class="footLink copyright name">Jade Nguyen</p>
+            </a>
             <p class=" copyright">© 2022 Jade Nguyen. All Rights Reserved</p>
         </div>
         <div class="foot sides">
             <p class="footTitle">Projects:</p>
-            <a href="portfolio-chronoshift.html"><p class="footLink">Chronoshift Project</p></a>
-            <a href="portfolio-tourism.html"><p class="footLink">Tourism Project</p></a>
-            <a href="portfolio-interactiveStory.html"><p class="footLink">Interactive Project</p></a>
-            <a href="portfolio-calculator.html"><p class="footLink">Calculator Project</p></a>
-            <a href="portfolio-artProjects.html"><p class="footLink">Art Projects</p></a>
+            <a href="portfolio-chronoshift.html">
+                <p class="footLink">Chronoshift Project</p>
+            </a>
+            <a href="portfolio-tourism.html">
+                <p class="footLink">Tourism Project</p>
+            </a>
+            <a href="portfolio-interactiveStory.html">
+                <p class="footLink">Interactive Project</p>
+            </a>
+            <a href="portfolio-calculator.html">
+                <p class="footLink">Calculator Project</p>
+            </a>
+            <a href="portfolio-artProjects.html">
+                <p class="footLink">Art Projects</p>
+            </a>
         </div>
     </footer>
     <script src="main.js"></script>
 </body>
+
 </html>
