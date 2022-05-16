@@ -463,6 +463,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 80%;
+    background-size: 100%;
 }
 
 .contactMeContent {
@@ -492,6 +493,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 80%;
+    background-size: 100%;
 }
 
 .pageBorder, .resumeContent, .resumeTitle {
@@ -619,6 +621,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 20%;
+    background-size: 100%;
 }
 
 .personalLifeFormat {
@@ -872,6 +875,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 5%;
+    background-size: 100%;
 }
 
 .containArtPro {
@@ -1137,6 +1141,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 5%;
+    background-size: 100%;
 }
 
 /* Chronoshift Image Carousel */
@@ -1326,6 +1331,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-size: 100%;
 }
 
 /* Interactive Story Image Carousel */
@@ -1431,6 +1437,7 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 80%;
+    background-size: 100%;
 }
 .calculatorImage {
     background-image: url('img/calculator.PNG');
@@ -1441,20 +1448,218 @@ h3 {
     border-radius: 4px;
 }
 
-/* 
-    position: relative;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-    margin-bottom: 6.5vh;
+@media screen and (max-width: 1024px) {
+    /* Hero Formatting */
+    .heroFormat {
+        height: 65vh;
+    }
+
+    .heroHeading {
+        font-size: 1.5em;
+        padding: 10px;
+        transform: translate( -50%, -175%);
+    }
+
+    .long {
+        top: 60%;
+    }
+
+    .pageBorder {
+        width: 1%;
+    }
+
+    .contentBlock {
+        width: 98%;
+    }
+
+    #projectSlide, #interactiveStoryslide, .calculatorImage {
+        height: 35vw;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    /* Index */
+    .heroIndex {
+        background-position: 50% 40%;
+    }
+
+    /* Personal Life Page */
+    #personalLifeSlide1, #personalLifeSlide3 {
+        height: 33.5vw;
+    }
+
+    #personalLifeSlide2 {
+        height: 40vw;
+    }
+
+    /* Resume Page */
+    .resumeTitle, .resumeContent {
+        width: 50%;
+        padding: 0 10px;
+    }
+
+    hr {
+        width: 95%;
+    }
+
+    .pageFormat {
+        justify-content: space-around;
+    }
+
+    /* Tourism Page */
+    .heroTourism {
+        background-size: 100%;
+    }
+
+    /* Art Projects Page */
+    .imgArtPro {
+        width: 40%;
+    }
+
+    .containArtPro {
+        justify-content: space-around;
+    }
 }
 
-#interactiveStoryslide label {
-    margin: auto;
-    
-    height: 120%;
-    border-radius: 4px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    cursor: pointer;
-    transition: transform 0.75s ease; */
+@media screen and (max-width: 480px) {
+    /* Navigation Bar */
+    .navBar {
+        flex-direction: column;
+        align-items: center;
+        font-size: 75%;
+    }
+
+    nav a {
+        line-height: 2.25em;
+    }
+
+    .navContainerL, .navContainerR {
+        padding: 0;
+    }
+
+    .topTier {
+        margin: 3.5vh 0 0 0;
+    }
+
+    .content {
+        font-size: 85%;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sides {
+        width: 100%;
+    }
+
+    .footTitle {
+        text-indent: 0;
+    }
+
+    /* Hero Formatting */
+    .heroHeading {
+        font-size: 90%;
+        top: 40%;
+        width: 75%;
+        background-color: rgba(227, 204, 222, .5);
+    }
+
+    .heroFormat {
+        height: 45vh;
+        filter: blur(2px);
+    }
+
+    .heroIndex {
+        background-size: 175%;
+        background-position: top;
+    }
+
+    .pageBg {
+        filter: blur(2px);
+    }
+
+    .pageTitle {
+        background-color: rgba(227, 204, 222, .5);
+        border: 2px solid rgba(59, 75, 22, .5);
+    }
+
+    .pageTitle:hover {
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(59, 75, 22, .3);
+    }
+
+    .bg7 {
+        background-position: 50%;
+    }
+
+    /* Personal Life Page */
+    .personalLifeFormat {
+        flex-direction: column;
+    }
+
+    .personalLifeContent {
+        width: 100%;
+    }
+
+    .personalLifeSlide {
+        width: 60%;
+    }
+
+    /* HELP I CANT GET THEM TO THE MIDDLE
+                SEND HELP!!*/
+
+    #personalLifeSlide1, #personalLifeSlide3 {
+        height: 23em;
+        width: 23.5em;
+    }
+
+    #personalLifeSlide2 {
+        width: 78vw;
+        height: 35vh;
+    }
+
+    #personalLifeSlide1 label, #personalLifeSlide2 label, #personalLifeSlide3 label {
+        margin: 0;
+    }
+
+    .carouselDescription {
+        margin: 1.5em 0 0 0;
+    }
+
+    .portrait {
+        margin: 3em 0 0 0;
+    }
+
+    .fypImg {
+        height: 45vh;
+        width: 100%;
+    }
+
+    .portfolioButton {
+        margin: 0;
+    }
+
+    .containArtPro {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .imgArtPro {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .textArtPro {
+        width: 100%;
+    }
+
+    .landscape {
+        height: 35vh;
+    }
+}
