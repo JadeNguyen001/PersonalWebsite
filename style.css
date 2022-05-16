@@ -8,6 +8,7 @@ body {
 .navBar {
     display: flex;
     justify-content: space-between;
+
 }
 
 .navContainerL {
