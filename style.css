@@ -460,7 +460,6 @@ a {
 .heroContact {
     background-image: url('img/contactHero.jpg');
     background-attachment: fixed;
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 80%;
     background-size: 100%;
@@ -490,7 +489,6 @@ a {
 .heroResume {
     background-image: url('img/resumeHero.jpg');
     background-attachment: fixed;
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 80%;
     background-size: 100%;
@@ -1144,6 +1142,10 @@ h3 {
     background-size: 100%;
 }
 
+.topText {
+    margin: 5vw 0 0 0;
+}
+
 /* Chronoshift Image Carousel */
 #chronoWebs1:checked~#chronoWebslide4,
 #chronoWebs2:checked~#chronoWebslide5,
@@ -1434,7 +1436,6 @@ h3 {
 .heroCalculator {
     background-image: url('img/calculator.PNG');
     background-attachment: fixed;
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 80%;
     background-size: 100%;
@@ -1448,7 +1449,8 @@ h3 {
     border-radius: 4px;
 }
 
-@media screen and (max-width: 1024px) {
+/* Tablet Mode */
+@media screen and (min-width: 480px) and (max-width: 1024px)  {
     /* Hero Formatting */
     .heroFormat {
         height: 65vh;
@@ -1481,6 +1483,10 @@ h3 {
         padding: 0 10px;
     }
 
+    .topText {
+        margin: 10vw 0 0 0;
+    }
+
     /* Index */
     .heroIndex {
         background-position: 50% 40%;
@@ -1501,6 +1507,11 @@ h3 {
         padding: 0 10px;
     }
 
+    /* .resumePhone {
+        width: 0%;
+        padding: 0 0 0 10%;
+    } */
+
     hr {
         width: 95%;
     }
@@ -1514,6 +1525,11 @@ h3 {
         background-size: 100%;
     }
 
+    /* Calculator Page */
+    .heroCalculator {
+        background-size: cover;
+    }
+
     /* Art Projects Page */
     .imgArtPro {
         width: 40%;
@@ -1524,12 +1540,21 @@ h3 {
     }
 }
 
-@media screen and (max-width: 480px) {
+/* Phone Mode */
+@media screen and (min-width: 320px) and (max-width: 479px) {
     /* Navigation Bar */
     .navBar {
         flex-direction: column;
         align-items: center;
         font-size: 75%;
+    }
+
+    .resumeContent, .resumeTitle {
+        width: 48%;
+    }
+
+    .pageBorder {
+        width: 1%;
     }
 
     nav a {
@@ -1546,6 +1571,22 @@ h3 {
 
     .content {
         font-size: 85%;
+    }
+
+    .pageBorder {
+        width: 1%;
+    }
+
+    .contentBlock {
+        width: 98%;
+    }
+
+    .main {
+        padding: 25px 1%;
+    }
+
+    hr {
+        width: 95%;
     }
 
     /* Footer */
@@ -1565,18 +1606,32 @@ h3 {
     /* Hero Formatting */
     .heroHeading {
         font-size: 90%;
-        top: 40%;
+        top: 20vh;
         width: 75%;
         background-color: rgba(227, 204, 222, .5);
     }
 
+    #projectSlide, #interactiveStoryslide, .calculatorImage {
+        height: 35vw;
+    }
+
     .heroFormat {
-        height: 45vh;
+        height: 40vh;
         filter: blur(2px);
     }
 
     .heroIndex {
         background-size: 175%;
+        background-position: top;
+    }
+
+    /* Hero for Pages */
+    .heroCalculator {
+        background-size: 175%;
+        background-position: top;
+    }
+
+    .heroPersonalLife, .heroContact {
         background-position: top;
     }
 
@@ -1661,5 +1716,16 @@ h3 {
 
     .landscape {
         height: 35vh;
+    }
+
+    /* Resume Page */
+    .heroResume {
+        background-size: 100%;
+        background-position: 50% -60%;
+    }
+
+    .resumePhone {
+        width: 0%;
+        padding: 0 0 0 10%;
     }
 }
